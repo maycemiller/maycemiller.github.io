@@ -1,0 +1,43 @@
+body{
+    background: url(../img/avsPic.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+article{
+    padding: 2em;
+    margin: 0;
+}
+
+.overlay{
+    width: 20%;
+    height: 5%;
+    margin: 0;
+
+    border: .7em solid rgb(55, 55, 134);
+    box-shadow: 7px 3px rgb(55, 55, 134);
+}
+
+#score{
+    position: fixed;
+    background-color: rgb(161, 34, 34);
+    top: 5%;
+    left: 5%;
+    height: 100px;
+}
+
+#channel{
+    position: fixed;
+    background-color: rgb(161, 34, 34);
+    bottom: 5%;
+    right: 5%;
+    border-radius: 2em;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
