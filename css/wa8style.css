@@ -27,7 +27,8 @@ img{
 }
 
 img:hover{
-    width: 100%;
+    width: 50vw;
+    transition: margin-right 4s ease-in-out 1s;
 }
 
 #red-ball{
