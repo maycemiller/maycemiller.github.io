@@ -1,0 +1,144 @@
+body {
+  background-color: #3c64f36e;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Garamond, Georgia, serif;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav {
+  background-color: #000;
+  padding: .5em;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+
+}
+
+.photos {
+  list-style: none;
+  object-position: bottom;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .30em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+
+}
+
+.feature {
+  width: 200px;
+  margin: 1em;
+  float: right;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  
+       body {
+            background-color: rgba(247, 110, 217, 0.838);
+            color: #333;
+            margin: 0;
+            font: 1.2em / 1.2 arial, Helvetica, sans-serif;
+          }
+        
+          .logo {
+            font-size: 200%;
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1000px;
+          }
+          
+          .grid {
+            margin: 0 auto;
+            padding: 0 20px;
+            max-width: 980px;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          nav {
+            background-color: #000;
+            padding: .5em;
+            position: sticky;
+            top: 0;
+          }
+          
+          nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        
+          }
+          
+          nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: .5em 1em;
+          }
+          
+          .photos {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .20em;
+            
+        
+          }
+
+          img {
+            max-width: 100%;
+            display: block;
+      
+        }
+        
+          .feature {
+              width: 200px;
+              float: right;
+              margin: 1em;
+          }
+  
+        }
+
+
+        
