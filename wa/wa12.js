@@ -1,4 +1,5 @@
-document.querySelector('#js-new-quote').addEventListener('click', getJoke);
+document.querySelector('#js-new-quote')
+newBtn.addEventListener('click', getJoke);
 
         async function getJoke() {
             try {
@@ -16,6 +17,7 @@ document.querySelector('#js-new-quote').addEventListener('click', getJoke);
 
                 const json = await response.json();
                 displayJoke(json.joke);
+
             } catch (err) {
                 console.log(err);
                 alert('Failed to fetch new joke');
@@ -25,21 +27,20 @@ document.querySelector('#js-new-quote').addEventListener('click', getJoke);
 
         function displayJoke(joke) {
             const jokeText = document.querySelector('#js-quote-text');
+            changeBackgroundColor();
+
             jokeText.textContent = joke;
         }
 
-        getJoke();
 
         function changeBackgroundColor() {
-            // Get a random color
-            var randomColor = getRandomColor();
+    
+            let randomColor = getRandomColor();
 
-            // Change the background color of the body
             document.body.style.backgroundColor = randomColor;
         }
 
         function getRandomColor() {
-            // Generate a random hexadecimal color code
             var letters = '0123456789ABCDEF';
             var color = '#';
             for (var i = 0; i < 6; i++) {
@@ -48,5 +49,5 @@ document.querySelector('#js-new-quote').addEventListener('click', getJoke);
             return color;
         }
 
-        changeBackgroundColor();
+
 
