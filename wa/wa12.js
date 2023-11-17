@@ -1,4 +1,5 @@
-document.querySelector('#js-new-quote')
+const newBtn = document.querySelector('#js-new-quote','.btn');
+
 newBtn.addEventListener('click', getJoke);
 
         async function getJoke() {
@@ -33,6 +34,7 @@ newBtn.addEventListener('click', getJoke);
         }
 
 
+   
         function changeBackgroundColor() {
     
             let randomColor = getRandomColor();
